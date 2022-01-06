@@ -6,7 +6,7 @@ require './lib/post_manager'
 class BlogApp < Sinatra::Base
   configure :development do
     register Sinatra::Reloader
-     also_reload 'lib/post.rb'
+    also_reload 'lib/post.rb'
     also_reload 'lib/post_manager.rb'
   end
 
